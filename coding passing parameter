@@ -1,0 +1,17 @@
+package selfprogramming;
+
+public class passingParameter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num[]= {10, 20, 30, 40, 50, 60, 70, 80};
+		System.out.println("The number of elements : " + num.length);
+		printArray(num); // passing parameter
+	}
+	
+	public static void printArray(int[] number) {
+		for(int index = 0; index < number.length; index++)
+			System.out.println(number[index] + "");
+	}
+
+}
