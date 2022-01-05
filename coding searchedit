@@ -1,0 +1,33 @@
+package selfprogramming;
+
+public class searchEdit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] item = {15,25,35,45,55,65,75,85,95};
+		editValue(item, 60);
+		printArray(item);
+		
+	}
+	
+	static void printArray(int[] number) {
+		
+		for(int index = 0; index < number.length; index++)
+			System.out.println(number[index] + "");
+		
+	}
+
+	static void editValue(int[] num, int searchValue) {
+		boolean edit = false;
+		for(int i = 0; i < num.length; i++)
+			if(num[i] == searchValue) {
+				num[i] = 65;
+				edit = true;
+				break;
+		
+			}
+		if(edit == false)
+			System.out.println("The search value is not in the list.");
+	}
+
+}
